@@ -1,0 +1,14 @@
+array=[1, 0, 1, 1, 0, 1, 0, 1, 0, 0, 0, 1, 0, 1]
+zero_c= 0
+total_ele=0
+for item in array:
+    if item==0:
+        zero_c+=1
+    total_ele+=1
+one_c=total_ele-zero_c
+out_array = []
+for i in range(zero_c):
+    out_array.append(0)
+for i in range(one_c):
+    out_array.append(1)
+print("Output:",out_array)
