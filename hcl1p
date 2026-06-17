@@ -1,0 +1,7 @@
+s=input("Enter the string:")
+v="AEIOUaeiou"
+res=""
+for char in s:
+    if char not in v:
+        res+=char
+print("String after removing vowels:",res)
